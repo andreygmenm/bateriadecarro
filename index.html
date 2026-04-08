@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bateria de Carro em Maringá com Entrega Rápida | Potencial Baterias</title>
+  <meta name="description" content="Bateria de carro em Maringá com entrega em até 30 minutos, instalação no local e atendimento 24h. Potencial Baterias atende Maringá, Sarandi, Paiçandu e Mandaguaçu. Chame no WhatsApp agora." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.seu-dominio.com.br/" />
+
+  <style>
+    :root {
+      --primary: #0076ff;
+      --primary-dark: #0056b3;
+      --secondary: #ffcc00;
+      --bg: #f4f5f7;
+      --text: #1f2933;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* HEADER */
+
+    header {
+      background-color: #001021;
+      color: var(--white);
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-img {
+      height: 52px;
+      width: auto;
+    }
+
+    .header-info {
+      font-size: 0.8rem;
+      color: #d0d7e2;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.92rem;
+    }
+
+    nav a { padding: 0.25rem 0.25rem; }
+
+    nav a:hover { color: var(--secondary); }
+
+    .header-phone {
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    /* MENU MOBILE (HAMBÚRGUER/SETA) */
+    .mobile-menu-toggle {
+      display: none;
+      border: 1px solid rgba(255,255,255,0.4);
+      color: var(--white);
+      background: transparent;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+    }
+
+    .mobile-menu-toggle span.icon {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      margin-top: 0.4rem;
+      gap: 0.3rem;
+    }
+
+    .mobile-nav a {
+      padding: 0.35rem 0;
+      font-size: 0.9rem;
+    }
+
+    /* HERO */
+
+    .hero {
+      background: radial-gradient(circle at top left, #123057, #020716);
+      color: var(--white);
+      padding: 3rem 1.5rem 3.5rem;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1.1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+
+    @media (min-width: 900px) {
+      .hero h1 { font-size: 2.5rem; }
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+      color: #e9edf5;
+    }
+
+    .badge-list {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .badge {
+      background-color: rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .hero-cta { margin-top: 1.5rem; }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+    }
+
+    .btn-primary:hover { background-color: var(--primary-dark); }
+
+    .whatsapp-info {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #cfd5e5;
+    }
+
+    .phone-highlight {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    .phone-highlight a {
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    .hero-card {
+      background-color: rgba(4,16,35,0.9);
+      border-radius: 18px;
+      padding: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.5);
+    }
+
+    .hero-card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .hero-card li + li {
+      margin-top: 0.35rem;
+    }
+
+    .hero-vehicle {
+      margin-top: 1.25rem;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .hero-vehicle img {
+      width: 100%;
+      display: block;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    section + section {
+      margin-top: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--white);
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      border: 1px solid #dde1ea;
+    }
+
+    .regions-list a {
+      display: block;
+      padding: 0.6rem 0.8rem;
+      border-radius: 8px;
+      background-color: var(--white);
+      border: 1px solid #dde1ea;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .regions-list a:hover {
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    .symptoms-list {
+      margin: 0.5rem 0 1rem;
+    }
+
+    .symptoms-list li {
+      margin-left: 1.1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    blockquote {
+      background-color: var(--white);
+      border-left: 4px solid var(--primary);
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.92rem;
+    }
+
+    blockquote footer {
+      font-size: 0.8rem;
+      color: #6c757d;
+      margin-top: 0.3rem;
+    }
+
+    .contact-section .contact-item {
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-section strong {
+      display: inline-block;
+      width: 100px;
+    }
+
+    .contact-section a {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .fixed-whatsapp {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 200;
+    }
+
+    .fixed-whatsapp a {
+      background-color: #25d366;
+      color: var(--white);
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+      display: inline-block;
+      font-weight: 700;
+    }
+
+    .fixed-whatsapp a:hover { background-color: #1ba851; }
+
+    footer {
+      background-color: #001021;
+      color: #adb5bd;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    /* FORM BATERIA CERTA */
+    .battery-form {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .battery-form label {
+      font-size: 0.88rem;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .battery-form input,
+    .battery-form select {
+      width: 100%;
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid #c4c8d4;
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+      }
+
+      nav { display: none; }
+
+      .mobile-menu-toggle {
+        display: inline-flex;
+        align-self: flex-end;
+      }
+
+      .mobile-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <img src="logo-potencial-baterias.png"
+           alt="Logomarca Potencial Baterias"
+           title="Potencial Baterias"
+           class="logo-img" />
+      <!-- texto do cabeçalho removido a pedido -->
+      <!-- <div class="header-info">
+        Potencial Baterias • Desde 2014<br />
+        Bateria de carro em Maringá e região
+      </div> -->
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <nav class="desktop-nav">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#bateria-certa">Bateria certa</a>
+      <a href="#atendimento24h">24h</a>
+      <a href="#regioes">Regiões</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#veiculos">Carros e Motos</a>
+      <a href="#quando-trocar">Quando trocar</a>
+      <a href="#contato" class="header-phone">(44) 99169-8557</a>
+    </nav>
+
+    <!-- BOTÃO MENU MOBILE -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+      <span class="icon">≡</span>
+      <span>Menu</span>
+    </button>
+
+    <!-- MENU MOBILE OCULTO -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#bateria-certa">Bateria certa</a>
+      <a href="#atendimento24h">24h</a>
+      <a href="#regioes">Regiões</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#veiculos">Carros e Motos</a>
+      <a href="#quando-trocar">Quando trocar</a>
+      <a href="#contato">(44) 99169-8557</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div>
+        <h1>Bateria de Carro em Maringá com Entrega Rápida em Até 30 Minutos</h1>
+        <p class="hero-sub">
+          Instalação no local • Atendimento 24h • Preços acessíveis
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn-primary"
+             href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+             target="_blank" rel="noopener">
+            Chamar no WhatsApp Agora
+          </a>
+          <p class="whatsapp-info">
+            Atendimento imediato para Maringá, Sarandi, Paiçandu e Mandaguaçu. Informe o modelo do veículo e seu bairro.
+          </p>
+          <p class="phone-highlight">
+            Ou ligue agora: <a href="tel:+5544991698557">(44) 99169-8557</a>
+          </p>
+        </div>
+
+        <div class="badge-list">
+          <span class="badge">Troca em domicílio e atendimento emergencial</span>
+          <span class="badge">Marcas: Eletran, Motorlight, Tudor, Suprema, Cral, Pioneiro, Moura</span>
+          <span class="badge">Pagamento no cartão e PIX</span>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2>Disk bateria em Maringá e região</h2>
+        <ul>
+          <li>• Bateria de carro em Maringá com delivery rápido;</li>
+          <li>• Atendimento 24h, inclusive domingos e feriados;</li>
+          <li>• Instalação no local e teste do sistema elétrico;</li>
+          <li>• Atendemos Maringá, Sarandi, Paiçandu e Mandaguaçu.</li>
+        </ul>
+
+        <div class="hero-vehicle">
+          <img src="banner-baterias.png"
+               alt="Banner com baterias automotivas Potencial Baterias em Maringá"
+               title="Baterias automotivas com entrega rápida em Maringá - Potencial Baterias" />
+        </div>
+
+        <div class="hero-vehicle" style="margin-top:0.8rem;">
+          <img src="carro-disk-baterias.png"
+               alt="Carro Disk Baterias da Potencial Baterias atendendo Maringá e região"
+               title="Carro Disk Baterias Potencial - atendimento em Maringá e região" />
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- O QUE FAZEMOS -->
+    <section id="servicos">
+      <h2>Entrega, Troca e Instalação de Baterias Automotivas em Maringá</h2>
+      <p>
+        A Potencial Baterias é especializada em soluções rápidas de <strong>bateria automotiva em Maringá</strong>.
+        Vamos até você com a bateria correta, fazemos a instalação no local e testamos o sistema elétrico
+        para garantir que o veículo volte a funcionar na hora.
+      </p>
+
+      <div style="margin: 1.5rem 0;">
+        <img src="baterias-servicos.png"
+             alt="Estoque de baterias automotivas prontas para entrega em Maringá"
+             title="Baterias automotivas prontas para entrega em Maringá - Potencial Baterias"
+             style="width:100%; max-height:260px; object-fit:cover; border-radius:12px; box-shadow:0 10px 22px rgba(0,0,0,0.12);" />
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Entrega e troca no local</h3>
+          <p>Atendemos onde o veículo estiver: residência, trabalho, condomínio, estacionamento ou via pública.</p>
+        </div>
+        <div class="card">
+          <h3>Teste completo</h3>
+          <p>Além da troca da bateria, testamos o alternador e verificamos se há outros problemas no sistema elétrico.</p>
+        </div>
+        <div class="card">
+          <h3>Descarte correto</h3>
+          <p>Coletamos a bateria antiga e realizamos a destinação ambientalmente adequada, sem custo extra.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BATERIA CERTA -->
+    <section id="bateria-certa">
+      <h2>Bateria Certa para o Seu Veículo</h2>
+      <p>
+        Não sabe qual é a bateria certa para o seu carro? Preencha os campos abaixo e clique em
+        <strong>“Consultar no WhatsApp”</strong>. Vamos indicar a bateria ideal (marca e amperagem) com base nas
+        especificações do seu veículo, com atendimento direto da Potencial Baterias em Maringá.
+      </p>
+
+      <form id="batteryForm" class="battery-form" onsubmit="return false;">
+        <div>
+          <label for="marca-veiculo">Marca do veículo</label>
+          <input id="marca-veiculo" type="text" placeholder="Ex.: Fiat, VW, Chevrolet" />
+        </div>
+        <div>
+          <label for="modelo-veiculo">Modelo</label>
+          <input id="modelo-veiculo" type="text" placeholder="Ex.: Uno, Gol, Onix" />
+        </div>
+        <div>
+          <label for="ano-veiculo">Ano</label>
+          <input id="ano-veiculo" type="text" placeholder="Ex.: 2016" />
+        </div>
+        <div>
+          <label for="combustivel">Combustível</label>
+          <select id="combustivel">
+            <option value="">Selecione</option>
+            <option value="Flex">Flex</option>
+            <option value="Gasolina">Gasolina</option>
+            <option value="Álcool">Álcool</option>
+            <option value="Diesel">Diesel</option>
+            <option value="GNV">GNV</option>
+          </select>
+        </div>
+        <div>
+          <label for="acessorios">Acessórios elétricos (som, alarme...)</label>
+          <input id="acessorios" type="text" placeholder="Ex.: som potente, alarme, travas..." />
+        </div>
+        <div>
+          <label for="cidade-bairro">Cidade / Bairro</label>
+          <input id="cidade-bairro" type="text" placeholder="Ex.: Maringá - Zona 7" />
+        </div>
+      </form>
+
+      <button class="btn-primary" onclick="enviarBateriaCertaWhatsApp()">
+        Consultar bateria certa no WhatsApp
+      </button>
+
+      <p style="margin-top:0.6rem; font-size:0.9rem; color:#6c757d;">
+        Usamos essas informações para indicar a amperagem correta (47Ah, 50Ah, 60Ah, 70Ah ou 75Ah) e a melhor marca
+        de bateria para o seu carro em Maringá.
+      </p>
+    </section>
+
+    <!-- TEMPO DE ENTREGA -->
+    <section id="tempo-entrega">
+      <h2>Entrega Rápida em Até 30 Minutos em Maringá</h2>
+      <p>
+        Sabemos que ficar com o carro parado é urgente. Por isso, priorizamos a agilidade no atendimento de
+        <strong>bateria de carro em Maringá</strong>:
+      </p>
+      <div class="grid-3" style="margin-top: 1rem;">
+        <div class="card">
+          <h3>Maringá</h3>
+          <p>Entrega e instalação em até 30 minutos em grande parte da área urbana, em condições normais de trânsito.</p>
+        </div>
+        <div class="card">
+          <h3>Sarandi e Paiçandu</h3>
+          <p>Atendimento rápido, com tempo estimado informado no momento do contato.</p>
+        </div>
+        <div class="card">
+          <h3>Mandaguaçu</h3>
+          <p>Atendimento na cidade e arredores, com previsão de chegada repassada pela equipe antes da saída.</p>
+        </div>
+      </div>
+      <p style="margin-top: 0.8rem; font-size: 0.9rem; color:#6c757d;">
+        O tempo de chegada pode variar conforme o trânsito e a demanda. No contato, nossa equipe informa o prazo mais preciso.
+      </p>
+    </section>
+
+    <!-- 24 HORAS -->
+    <section id="atendimento24h">
+      <h2>Bateria 24h em Maringá – Atendimento Emergencial</h2>
+      <p>
+        Carro não liga de madrugada, domingo ou feriado? Nosso atendimento de <strong>bateria 24h em Maringá</strong>
+        está pronto para te atender em qualquer horário.
+      </p>
+
+      <div class="grid-3" style="margin-top:1rem;">
+        <div class="card">
+          <h3>Carro não liga?</h3>
+          <p>Se o carro só faz “cliques” ou não gira o motor, pode ser bateria. Vamos até você, sem precisar de guincho.</p>
+        </div>
+        <div class="card">
+          <h3>Onde atendemos</h3>
+          <p>Garagem, rua, empresa, condomínio, estacionamentos, postos e rodovias próximas a Maringá.</p>
+        </div>
+        <div class="card">
+          <h3>Prioridade máxima</h3>
+          <p>Chamados emergenciais têm prioridade para reduzir ao máximo o tempo de espera.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:1rem;">
+        <a class="btn-primary"
+           href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+           target="_blank" rel="noopener">
+          Preciso de bateria agora
+        </a>
+      </p>
+    </section>
+
+    <!-- REGIÕES -->
+    <section id="regioes">
+      <h2>Regiões Atendidas em Maringá e Região Metropolitana</h2>
+      <p>
+        Atendemos toda a cidade de Maringá e região metropolitana com foco em buscas locais no Google e Google Maps:
+      </p>
+      <div class="regions-list" style="margin-top: 1rem;">
+        <a href="#contato" title="Bateria de carro na Zona 7 em Maringá">Zona 7 – Maringá</a>
+        <a href="#contato" title="Bateria de carro na Zona Norte em Maringá">Zona Norte – Maringá</a>
+        <a href="#contato" title="Bateria de carro no Jardim Alvorada em Maringá">Jardim Alvorada – Maringá</a>
+        <a href="#contato" title="Bateria de carro em Sarandi">Sarandi</a>
+        <a href="#contato" title="Bateria de carro em Paiçandu">Paiçandu</a>
+        <a href="#contato" title="Bateria de carro em Mandaguaçu">Mandaguaçu</a>
+      </div>
+      <p style="margin-top:0.6rem; font-size:0.9rem; color:#6c757d;">
+        Nas descrições do Google Meu Negócio usamos as mesmas regiões para fortalecer o posicionamento local.
+      </p>
+    </section>
+
+    <!-- MARCAS E ESPECIFICAÇÕES -->
+    <section id="marcas">
+      <h2>Marcas de Bateria e Especificações Disponíveis</h2>
+      <p>
+        Trabalhamos com as principais marcas de baterias automotivas do mercado, sempre respeitando a especificação correta
+        para cada veículo. Consulte abaixo as opções mais procuradas em Maringá:
+      </p>
+
+      <div class="grid-3" style="margin-top:1.5rem;">
+        <!-- Eletran -->
+        <div class="card">
+          <img src="baterias-eletran.png"
+               alt="Baterias Eletran automotivas em Maringá"
+               title="Baterias Eletran em Maringá - Potencial Baterias"
+               style="width:100%; border-radius:8px; margin-bottom:0.75rem;" />
+          <h3>Eletran</h3>
+          <p>Modelos de bateria Eletran disponíveis:</p>
+          <ul class="symptoms-list">
+            <li>Eletran 47Ah</li>
+            <li>Eletran 50Ah</li>
+            <li>Eletran 60Ah</li>
+            <li>Eletran 70Ah</li>
+            <li>Eletran 75Ah</li>
+          </ul>
+        </div>
+
+        <!-- Motorlight -->
+        <div class="card">
+          <img src="baterias-motorlight.png"
+               alt="Baterias Motorlight automotivas em Maringá"
+               title="Baterias Motorlight em Maringá - Potencial Baterias"
+               style="width:100%; border-radius:8px; margin-bottom:0.75rem;" />
+          <h3>Motorlight</h3>
+          <p>Modelos Motorlight mais utilizados:</p>
+          <ul class="symptoms-list">
+            <li>Motorlight 47Ah</li>
+            <li>Motorlight 50Ah</li>
+            <li>Motorlight 60Ah</li>
+            <li>Motorlight 70Ah</li>
+            <li>Motorlight 75Ah</li>
+          </ul>
+        </div>
+
+        <!-- Tudor -->
+        <div class="card">
+          <img src="baterias-tudor.png"
+               alt="Baterias Tudor automotivas em Maringá"
+               title="Baterias Tudor em Maringá - Potencial Baterias"
+               style="width:100%; border-radius:8px; margin-bottom:0.75rem;" />
+          <h3>Tudor</h3>
+          <p>Opções de bateria Tudor para diversos veículos:</p>
+          <ul class="symptoms-list">
+            <li>Tudor 47Ah</li>
+            <li>Tudor 50Ah</li>
+            <li>Tudor 60Ah</li>
+            <li>Tudor 70Ah</li>
+            <li>Tudor 75Ah</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:1.5rem;">
+        <!-- Suprema -->
+        <div class="card">
+          <img src="baterias-suprema.png"
+               alt="Baterias Suprema automotivas em Maringá"
+               title="Baterias Suprema em Maringá - Potencial Baterias"
+               style="width:100%; border-radius:8px; margin-bottom:0.75rem;" />
+          <h3>Suprema</h3>
+          <ul class="symptoms-list">
+            <li>Suprema 47Ah</li>
+            <li>Suprema 50Ah</li>
+            <li>Suprema 60Ah</li>
+            <li>Suprema 70Ah</li>
+            <li>Suprema 75Ah</li>
+          </ul>
+        </div>
+
+        <!-- Cral -->
+        <div class="card">
+          <img src="baterias-cral.png"
+               alt="Baterias Cral automotivas em Maringá"
+               title="Baterias Cral em Maringá - Potencial Baterias"
+               style="width:100%; border-radius:8px; margin-bottom:0.75rem;" />
+          <h3>Cral</h3>
+          <ul class="symptoms-list">
+            <li>Cral 47Ah</li>
+            <li>Cral 50Ah</li>
+            <li>Cral 60Ah</li>
+            <li>Cral 70Ah</li>
+            <li>Cral 75Ah</li>
+          </ul>
+        </div>
+
+        <!-- Pioneiro -->
+        <div class="card">
+          <img src="baterias-pioneiro.png"
+               alt="Baterias Pioneiro automotivas em Maringá"
+               title="Baterias Pioneiro em Maringá - Potencial Baterias"
+               style="width:100%; border-radius:8px; margin-bottom:0.75rem;" />
+          <h3>Pioneiro</h3>
+          <ul class="symptoms-list">
+            <li>Pioneiro 47Ah</li>
+            <li>Pioneiro 50Ah</li>
+            <li>Pioneiro 60Ah</li>
+            <li>Pioneiro 70Ah</li>
+            <li>Pioneiro 75Ah</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:1.5rem;">
+        <!-- Moura -->
+        <div class="card">
+          <img src="baterias-moura.png"
+               alt="Baterias Moura automotivas em Maringá"
+               title="Baterias Moura em Maringá - Potencial Baterias"
+               style="width:100%; border-radius:8px; margin-bottom:0.75rem;" />
+          <h3>Moura</h3>
+          <p>Algumas das baterias Moura que trabalhamos:</p>
+          <ul class="symptoms-list">
+            <li>Moura 47Ah</li>
+            <li>Moura 50Ah</li>
+            <li>Moura 60Ah</li>
+            <li>Moura 70Ah</li>
+            <li>Moura 75Ah</li>
+          </ul>
+          <p style="font-size:0.9rem;">
+            Consulte pelo WhatsApp a bateria Moura ideal para o seu carro em Maringá.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Como escolher a amperagem certa?</h3>
+          <p>
+            A amperagem (Ah) correta depende do modelo, ano e quantidade de acessórios elétricos do veículo.
+            Fale com nossa equipe e informe os dados do carro para receber a indicação exata.
+          </p>
+          <p style="margin-top:0.6rem;">
+            <a class="btn-primary"
+               href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+               target="_blank" rel="noopener">
+              Consultar bateria ideal
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARROS E MOTOS -->
+    <section id="veiculos">
+      <h2>Baterias para Carros e Motos com Especificação Correta</h2>
+      <p>
+        Atendemos carros populares, sedans, SUVs, caminhonetes e motos para uso diário ou trabalho, sempre respeitando
+        a especificação correta da <strong>bateria automotiva</strong> para cada veículo.
+      </p>
+
+      <div style="margin: 1.5rem 0;">
+        <img src="baterias-carros-motos.png"
+             alt="Baterias para carros e motos em Maringá"
+             title="Baterias para carros e motos com instalação no local em Maringá"
+             style="width:100%; max-height:260px; object-fit:cover; border-radius:12px; box-shadow:0 10px 22px rgba(0,0,0,0.12);" />
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Carros</h3>
+          <p>Baterias com a amperagem ideal para o seu modelo. Indicamos a melhor opção conforme modelo e ano do veículo.</p>
+        </div>
+        <div class="card">
+          <h3>Motos</h3>
+          <p>Troca rápida de baterias de moto, ideal para motociclistas e entregadores que não podem ficar parados.</p>
+        </div>
+        <div class="card">
+          <h3>Marcas de referência</h3>
+          <p>
+            Eletran, Motorlight, Tudor, Suprema, Cral, Pioneiro, Moura e outras marcas de confiança,
+            sempre com garantia e nota fiscal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUANDO TROCAR -->
+    <section id="quando-trocar">
+      <h2>Quando Trocar a Bateria do Carro?</h2>
+      <p>
+        Se você percebeu qualquer um destes sinais, pode ser hora de trocar a bateria do seu carro em Maringá:
+      </p>
+      <ul class="symptoms-list">
+        <li>Carro demora mais para pegar, principalmente pela manhã;</li>
+        <li>Luzes do painel e faróis mais fracos;</li>
+        <li>Partida falhando ou fazendo apenas “clique”;</li>
+        <li>Bateria com mais de 2 ou 3 anos de uso;</li>
+        <li>Você já precisou de “chupeta” ou tranco mais de uma vez.</li>
+      </ul>
+      <p>
+        A Potencial Baterias atende diariamente motoristas com esses sintomas em Maringá, Sarandi, Paiçandu e Mandaguaçu.
+        Antes de ficar totalmente na mão, fale com nossa equipe e tire dúvidas pelo WhatsApp.
+      </p>
+      <p style="margin-top: 0.8rem;">
+        <a class="btn-primary"
+           href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+           target="_blank" rel="noopener">
+          Falar com especialista agora
+        </a>
+      </p>
+    </section>
+
+    <!-- DEPOIMENTOS + AVALIAÇÕES -->
+    <section id="depoimentos">
+      <h2>Depoimentos e Avaliações de Clientes</h2>
+      <p>
+        Quem já precisou de <strong>bateria de carro em Maringá</strong> com entrega rápida recomenda a Potencial Baterias:
+      </p>
+
+      <blockquote>
+        “Meu carro morreu no Jardim Alvorada à noite e, em menos de 30 minutos, a Potencial Baterias chegou com a bateria
+        certa. Atendimento rápido e profissional.”
+        <footer>Cliente de Maringá</footer>
+      </blockquote>
+      <blockquote>
+        “Resolvi tudo pelo WhatsApp, sem dor de cabeça. Chegaram rápido em Paiçandu e instalaram a bateria no estacionamento
+        da empresa.”
+        <footer>Cliente de Paiçandu</footer>
+      </blockquote>
+      <blockquote>
+        “Precisei de bateria em Mandaguaçu domingo à tarde e fui atendido na hora. Serviço excelente.”
+        <footer>Cliente de Mandaguaçu</footer>
+      </blockquote>
+
+      <div style="margin-top: 1.5rem;">
+        <h3>Avaliações reais no Google</h3>
+        <p style="font-size:0.9rem; margin-bottom:0.8rem;">
+          Prints das avaliações do Google Meu Negócio da Potencial Baterias em Maringá:
+        </p>
+        <div class="grid-3">
+          <div class="card">
+            <img src="avaliacao-1.png"
+                 alt="Print de avaliação positiva da Potencial Baterias no Google"
+                 title="Avaliação positiva de cliente no Google sobre Potencial Baterias"
+                 style="width:100%; border-radius:8px;" />
+          </div>
+          <div class="card">
+            <img src="avaliacao-2.png"
+                 alt="Print de cliente elogiando entrega rápida de bateria em Maringá"
+                 title="Cliente elogia entrega rápida de bateria em Maringá"
+                 style="width:100%; border-radius:8px;" />
+          </div>
+          <div class="card">
+            <img src="avaliacao-3.png"
+                 alt="Print de cliente recomendando atendimento 24h da Potencial Baterias"
+                 title="Avaliação sobre atendimento 24h da Potencial Baterias"
+                 style="width:100%; border-radius:8px;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact-section">
+      <h2>Fale Agora com a Potencial Baterias</h2>
+      <p>Entre em contato pelo WhatsApp ou telefone. Atendimento 24 horas, todos os dias.</p>
+
+      <div class="contact-item">
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+           target="_blank" rel="noopener">
+          Chamar no WhatsApp Agora
+        </a>
+      </div>
+      <div class="contact-item">
+        <strong>Telefone:</strong>
+        <a href="tel:+5544991698557">(44) 99169-8557</a>
+      </div>
+      <div class="contact-item">
+        <strong>Horário:</strong>
+        Atendimento 24h
+      </div>
+
+      <p style="margin-top:0.75rem; font-size:0.9rem; color:#6c757d;">
+        Seus dados serão usados apenas para retorno do contato e não serão compartilhados com terceiros.
+      </p>
+
+      <div style="margin-top:1.5rem;">
+        <h3>Localização</h3>
+        <p style="font-size:0.9rem; margin-bottom:0.5rem;">
+          Insira aqui o mapa do Google com a localização da Potencial Baterias para aparecer também no Google Maps.
+        </p>
+        <div style="background:#e1e5ee; height:250px; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#6c757d; font-size:0.9rem;">
+          Mapa do Google Maps (iframe)
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BOTÃO FIXO WHATSAPP -->
+  <div class="fixed-whatsapp">
+    <a href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+       target="_blank" rel="noopener">
+      WhatsApp 24h
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Potencial Baterias • Bateria automotiva em Maringá e região • Desde 2014<br />
+    Telefone/WhatsApp: (44) 99169-8557
+  </footer>
+
+  <!-- SCRIPT BATERIA CERTA + MENU MOBILE -->
+  <script>
+    function enviarBateriaCertaWhatsApp() {
+      const marca = document.getElementById('marca-veiculo').value.trim();
+      const modelo = document.getElementById('modelo-veiculo').value.trim();
+      const ano = document.getElementById('ano-veiculo').value.trim();
+      const combustivel = document.getElementById('combustivel').value.trim();
+      const acessorios = document.getElementById('acessorios').value.trim();
+      const cidadeBairro = document.getElementById('cidade-bairro').value.trim();
+
+      let msg = 'VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA%0A';
+      msg += 'Quero saber a bateria certa para o meu veículo.%0A%0A';
+      if (marca) msg += 'Marca: ' + encodeURIComponent(marca) + '%0A';
+      if (modelo) msg += 'Modelo: ' + encodeURIComponent(modelo) + '%0A';
+      if (ano) msg += 'Ano: ' + encodeURIComponent(ano) + '%0A';
+      if (combustivel) msg += 'Combustível: ' + encodeURIComponent(combustivel) + '%0A';
+      if (acessorios) msg += 'Acessórios elétricos: ' + encodeURIComponent(acessorios) + '%0A';
+      if (cidadeBairro) msg += 'Cidade/Bairro: ' + encodeURIComponent(cidadeBairro) + '%0A';
+
+      const url = 'https://wa.me/5544991698557?text=' + msg;
+      window.open(url, '_blank');
+    }
+
+    // MENU MOBILE
+    const mobileToggle = document.getElementById('mobileMenuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    if (mobileToggle && mobileNav) {
+      mobileToggle.addEventListener('click', () => {
+        const isOpen = mobileNav.style.display === 'flex';
+        mobileNav.style.display = isOpen ? 'none' : 'flex';
+        mobileNav.style.flexDirection = 'column';
+        mobileToggle.querySelector('.icon').textContent = isOpen ? '≡' : '▲';
+      });
+
+      mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileNav.style.display = 'none';
+          mobileToggle.querySelector('.icon').textContent = '≡';
+        });
+      });
+    }
+  </script>
+</body>
+</html>
