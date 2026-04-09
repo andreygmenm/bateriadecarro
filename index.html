@@ -384,7 +384,7 @@
 
   <!-- HEADER -->
   <header>
-    <div class="header-left">
+    <div class="header-center">
       <img src="logo-potencial-baterias2.png"
            alt="Logomarca Potencial Baterias"
            title="Potencial Baterias"
@@ -435,12 +435,12 @@
       <div>
         <h1>Bateria de Carro em Maringá com Entrega Rápida em Até 30 Minutos</h1>
         <p class="hero-sub">
-          Instalação no local • Atendimento 24h • Preços acessíveis
+          Instalação no local • Atendimento Online • Preços acessíveis
         </p>
 
         <div class="hero-cta">
           <a class="btn-primary"
-             href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+             href="https://wa.me/5544991698557?text=VIM-DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
              target="_blank" rel="noopener">
             Chamar no WhatsApp Agora
           </a>
@@ -463,7 +463,7 @@
         <h2>Disk bateria em Maringá e região</h2>
         <ul>
           <li>• Bateria de carro em Maringá com delivery rápido;</li>
-          <li>• Atendimento 24h, inclusive domingos e feriados;</li>
+          <li>• Atendimento Online, inclusive domingos e feriados;</li>
           <li>• Instalação no local e teste do sistema elétrico;</li>
           <li>• Atendemos Maringá, Sarandi, Paiçandu e Mandaguaçu.</li>
         </ul>
@@ -550,10 +550,6 @@
             <option value="Diesel">Diesel</option>
             <option value="GNV">GNV</option>
           </select>
-        </div>
-        <div>
-          <label for="acessorios">Acessórios elétricos (som, alarme...)</label>
-          <input id="acessorios" type="text" placeholder="Ex.: som potente, alarme, travas..." />
         </div>
         <div>
           <label for="cidade-bairro">Cidade / Bairro</label>
@@ -850,7 +846,7 @@
       </p>
       <p style="margin-top: 0.8rem;">
         <a class="btn-primary"
-           href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+           href="https://wa.me/5544991698557?text=VIM-DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
            target="_blank" rel="noopener">
           Falar com especialista agora
         </a>
@@ -925,7 +921,7 @@
       </div>
       <div class="contact-item">
         <strong>Horário:</strong>
-        Atendimento 24h
+        Atendimento Online
       </div>
 
       <p style="margin-top:0.75rem; font-size:0.9rem; color:#6c757d;">
@@ -947,9 +943,9 @@
 
   <!-- BOTÃO FIXO WHATSAPP -->
   <div class="fixed-whatsapp">
-    <a href="https://wa.me/5544991698557?text=VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
+    <a href="https://wa.me/5544991698557?text=VIM-DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA"
        target="_blank" rel="noopener">
-      WhatsApp 24h
+      WhatsApp Online
     </a>
   </div>
 
@@ -965,8 +961,6 @@
       const marca = document.getElementById('marca-veiculo').value.trim();
       const modelo = document.getElementById('modelo-veiculo').value.trim();
       const ano = document.getElementById('ano-veiculo').value.trim();
-      const combustivel = document.getElementById('combustivel').value.trim();
-      const acessorios = document.getElementById('acessorios').value.trim();
       const cidadeBairro = document.getElementById('cidade-bairro').value.trim();
 
       let msg = 'VIM--DO-SEU-SITE-E-PRECISO-DE-UMA-BATERIA%0A';
@@ -974,8 +968,6 @@
       if (marca) msg += 'Marca: ' + encodeURIComponent(marca) + '%0A';
       if (modelo) msg += 'Modelo: ' + encodeURIComponent(modelo) + '%0A';
       if (ano) msg += 'Ano: ' + encodeURIComponent(ano) + '%0A';
-      if (combustivel) msg += 'Combustível: ' + encodeURIComponent(combustivel) + '%0A';
-      if (acessorios) msg += 'Acessórios elétricos: ' + encodeURIComponent(acessorios) + '%0A';
       if (cidadeBairro) msg += 'Cidade/Bairro: ' + encodeURIComponent(cidadeBairro) + '%0A';
 
       const url = 'https://wa.me/5544991698557?text=' + msg;
